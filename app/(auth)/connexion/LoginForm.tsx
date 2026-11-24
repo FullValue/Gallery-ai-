@@ -25,7 +25,7 @@ export function LoginForm({ next, demoAccounts }: { next?: string; demoAccounts?
         )}
         <TextField ref={email} label="Identifiant ou e-mail" name="email" type="text" autoComplete="username" autoCapitalize="none" spellCheck={false}
           value={emailValue} onChange={(e) => setEmailValue(e.target.value)}
-          placeholder="SECRET-GARDEN" required error={err?.fieldErrors?.email} />
+          placeholder="Votre identifiant" required error={err?.fieldErrors?.email} />
         <div>
           <div className="relative">
             <TextField ref={password} label="Mot de passe" name="password" type={show ? "text" : "password"} autoComplete="current-password"
