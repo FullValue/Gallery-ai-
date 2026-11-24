@@ -1,0 +1,197 @@
+{
+  "_note": "Catalogue de départ : modules de formation à l'app gallery. (vidéos dans public/videos).",
+  "organizations": [
+    {
+      "name": "Gallery",
+      "kind": "Autre",
+      "city": null
+    }
+  ],
+  "modules": [
+    {
+      "slug": "prise-en-main",
+      "title": "Bienvenue dans gallery.",
+      "summary": "Ouvrir sa session, passer le parcours d'accueil et se repérer dans l'app en une minute.",
+      "objective": "Savoir se connecter et retrouver chaque espace de l'app.",
+      "icon": "compass",
+      "color": "violet",
+      "lessons": [
+        {
+          "title": "Se connecter à sa boutique",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "Le parcours d'accueil",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "Se repérer dans l'app",
+          "video": null,
+          "duration": null
+        }
+      ]
+    },
+    {
+      "slug": "accueil-du-jour",
+      "title": "L'accueil du jour",
+      "summary": "Lire l'écran d'accueil : les passages en direct, les nouveaux clients et le chiffre du jour.",
+      "objective": "Savoir ce qui s'est passé aujourd'hui en boutique d'un coup d'œil.",
+      "icon": "store",
+      "color": "jaune",
+      "lessons": [
+        {
+          "title": "Les passages en direct",
+          "video": null,
+          "duration": null
+        }
+      ]
+    },
+    {
+      "slug": "questionnaire-client",
+      "title": "Le questionnaire client",
+      "summary": "La plaquette NFC sur le comptoir, le questionnaire que remplit le client et les questions que vous choisissez.",
+      "objective": "Comprendre ce que vit le client quand il scanne, et adapter le questionnaire à la boutique.",
+      "icon": "nfc",
+      "color": "encre",
+      "lessons": [
+        {
+          "title": "La plaquette NFC et le lien",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "Ce que voit le client",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "Personnaliser ses questions",
+          "video": null,
+          "duration": null
+        }
+      ]
+    },
+    {
+      "slug": "conseiller-un-client",
+      "title": "Conseiller un client",
+      "summary": "De la fiche « Trouver son parfum » à la vente : le profil olfactif écrit par l'IA, les propositions tirées du stock et la clôture de la consultation.",
+      "objective": "Savoir quoi proposer, pourquoi, et enregistrer l'issue de chaque consultation.",
+      "icon": "scan",
+      "color": "bleu",
+      "lessons": [
+        {
+          "title": "Lancer « Trouver son parfum »",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "Lire le profil et les propositions",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "Clore : vendu ou pas vendu",
+          "video": null,
+          "duration": null
+        }
+      ]
+    },
+    {
+      "slug": "fichier-clients",
+      "title": "Le fichier clients",
+      "summary": "L'annuaire de la boutique : rechercher, filtrer et ouvrir une fiche client.",
+      "objective": "Retrouver n'importe quel client et ce qu'il aime en quelques secondes.",
+      "icon": "client",
+      "color": "rose",
+      "lessons": [
+        {
+          "title": "Retrouver un client",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "La fiche client",
+          "video": null,
+          "duration": null
+        }
+      ]
+    },
+    {
+      "slug": "relances",
+      "title": "Les relances",
+      "summary": "Les clients pas vus depuis un moment et les anniversaires qui approchent, avec le bon mot au bon moment.",
+      "objective": "Faire revenir les clients sans y penser.",
+      "icon": "relance",
+      "color": "menthe",
+      "lessons": [
+        {
+          "title": "Les clients à recontacter",
+          "video": null,
+          "duration": null
+        }
+      ]
+    },
+    {
+      "slug": "mails",
+      "title": "Les mails à vos clients",
+      "summary": "Un mail construit sur votre stock réel et sur ce que chaque client a dit aimer, puis le suivi des envois.",
+      "objective": "Écrire, cibler et suivre une campagne mail.",
+      "icon": "mail",
+      "color": "violet",
+      "lessons": [
+        {
+          "title": "Écrire un mail ciblé",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "Suivre ses envois",
+          "video": null,
+          "duration": null
+        }
+      ]
+    },
+    {
+      "slug": "ma-boutique",
+      "title": "Ma boutique",
+      "summary": "Le stock qui nourrit l'IA, les ventes traçables et les réglages de la boutique.",
+      "objective": "Tenir son catalogue à jour, lire ses ventes et régler sa boutique.",
+      "icon": "stock",
+      "color": "encre",
+      "lessons": [
+        {
+          "title": "Mes parfums",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "Mes ventes",
+          "video": null,
+          "duration": null
+        },
+        {
+          "title": "Les réglages",
+          "video": null,
+          "duration": null
+        }
+      ]
+    },
+    {
+      "slug": "gallery-ai",
+      "title": "Gallery AI",
+      "summary": "L'assistant de la boutique : posez vos questions sur le chiffre d'affaires, les meilleurs clients, le stock ou les relances.",
+      "objective": "Obtenir une réponse chiffrée sur sa boutique en une question.",
+      "icon": "assistant",
+      "color": "bleu",
+      "lessons": [
+        {
+          "title": "Interroger Gallery AI",
+          "video": null,
+          "duration": null
+        }
+      ]
+    }
+  ]
+}

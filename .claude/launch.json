@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "gallery-formation", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 3200, "cwd": "/Users/m/Projects/gallery-formation" }
+  ]
+}
