@@ -4,6 +4,7 @@ import { z } from "zod";
 import { getRepo } from "@/lib/data";
 import { accessState, getSessionUser, isStaff } from "@/lib/auth/session";
 import type { ActionResult } from "@/lib/types";
+import { identifierToEmail } from "@/lib/identifier";
 
 const emailSchema = z.string().trim().toLowerCase().email("Saisissez une adresse e-mail valide.");
 
@@ -14,9 +15,11 @@ function safeNext(value: FormDataEntryValue | null) {
 }
 
 export async function loginAction(_: ActionResult | null, form: FormData): Promise<ActionResult> {
-  const email = emailSchema.safeParse(form.get("email"));
+  // Identifiant de boutique (« SECRET-GARDEN ») ou adresse e-mail
+  const raw = String(form.get("email") ?? "").trim();
+  const email = raw ? emailSchema.safeParse(identifierToEmail(raw)) : null;
   const password = String(form.get("password") ?? "");
-  if (!email.success) return { ok: false, error: email.error.issues[0].message, fieldErrors: { email: email.error.issues[0].message } };
+  if (!email || !email.success) return { ok: false, error: "Saisissez votre identifiant ou votre adresse e-mail.", fieldErrors: { email: "Saisissez votre identifiant ou votre adresse e-mail." } };
   if (!password) return { ok: false, error: "Saisissez votre mot de passe.", fieldErrors: { password: "Saisissez votre mot de passe." } };
 
   const repo = await getRepo();

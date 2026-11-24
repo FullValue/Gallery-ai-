@@ -23,9 +23,9 @@ export function LoginForm({ next, demoAccounts }: { next?: string; demoAccounts?
         {err && !err.fieldErrors && (
           <div role="alert" className="animate-scale-in rounded-2xl bg-corail-100 px-4 py-3 text-sm font-medium text-corail-700">{err.error}</div>
         )}
-        <TextField ref={email} label="Adresse e-mail" name="email" type="email" autoComplete="email" inputMode="email"
+        <TextField ref={email} label="Identifiant ou e-mail" name="email" type="text" autoComplete="username" autoCapitalize="none" spellCheck={false}
           value={emailValue} onChange={(e) => setEmailValue(e.target.value)}
-          placeholder="prenom.nom@organisme.fr" required error={err?.fieldErrors?.email} />
+          placeholder="SECRET-GARDEN" required error={err?.fieldErrors?.email} />
         <div>
           <div className="relative">
             <TextField ref={password} label="Mot de passe" name="password" type={show ? "text" : "password"} autoComplete="current-password"
