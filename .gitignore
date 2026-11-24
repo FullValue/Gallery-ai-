@@ -11,3 +11,4 @@ next-env.d.ts
 node_modules.nosync
 .next.nosync
 
+.vercel
