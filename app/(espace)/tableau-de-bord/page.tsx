@@ -29,7 +29,7 @@ export default async function DashboardPage() {
   return (
     <div className="space-y-12 sm:space-y-14">
       {/* ─── Bienvenue ─── */}
-      <section className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-violet-500 via-[#6650EA] to-[#8A5BE6] p-6 text-white shadow-lift sm:p-10 animate-fade-up">
+      <section className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-violet-500 via-ink to-ink-soft p-6 text-white shadow-lift sm:p-10 animate-fade-up">
         <div className="absolute -right-24 -top-24 size-80 rounded-full bg-rose-500/40 blur-3xl" aria-hidden />
         <div className="absolute -bottom-28 left-1/3 size-72 rounded-full bg-bleu-500/40 blur-3xl" aria-hidden />
         <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_auto]">

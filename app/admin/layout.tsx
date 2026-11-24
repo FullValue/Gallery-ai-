@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: { default: "Back-office", template: "
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const user = await requireStaff();
   return (
-    <div className="flex min-h-dvh bg-[#F9F7FF]">
+    <div className="flex min-h-dvh bg-violet-50">
       <AdminSidebar name={user.full_name || user.email} email={user.email} initials={initials(user.full_name, user.email)} roleLabel={ROLE_LABELS[user.role]} />
       <div className="min-w-0 flex-1">
         <AdminMobileNav />

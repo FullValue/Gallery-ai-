@@ -27,7 +27,7 @@ export default async function PartnersPage({ searchParams }: { searchParams: Pro
             <Link key={o.organization.id} href={`/admin/partenaires/${o.organization.id}`}
               className="surface group flex flex-col p-6 transition hover:-translate-y-0.5 hover:shadow-lift">
               <div className="flex items-start gap-4">
-                <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-violet-500 to-[#8059E3] font-display font-bold text-white">
+                <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-violet-500 to-ink-soft font-display font-bold text-white">
                   {o.organization.name.slice(0, 2).toUpperCase()}
                 </span>
                 <div className="min-w-0 flex-1">

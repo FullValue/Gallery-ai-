@@ -18,7 +18,7 @@ export function ProgressBar({ value, className, tone = "violet", size = "md", la
       <div
         className={cn(
           "h-full origin-left rounded-full transition-[width] duration-700 ease-out [animation:grow_.9s_cubic-bezier(.2,.7,.2,1)_both]",
-          tone === "menthe" ? "bg-menthe-500" : tone === "white" ? "bg-white" : "bg-gradient-to-r from-violet-500 to-[#8059E3]",
+          tone === "menthe" ? "bg-menthe-500" : tone === "white" ? "bg-white" : "bg-gradient-to-r from-violet-500 to-ink-soft",
         )}
         style={{ width: `${v}%` }}
       />
@@ -28,7 +28,7 @@ export function ProgressBar({ value, className, tone = "violet", size = "md", la
 }
 
 /** Anneau de progression (SVG). */
-export function ProgressRing({ value, size = 120, stroke = 10, className, track = "#E9E1FB", color = "url(#yvRing)", children }: {
+export function ProgressRing({ value, size = 120, stroke = 10, className, track = "#E8E8E5", color = "url(#yvRing)", children }: {
   value: number; size?: number; stroke?: number; className?: string; track?: string; color?: string; children?: React.ReactNode;
 }) {
   const v = Math.max(0, Math.min(100, value));
@@ -39,8 +39,8 @@ export function ProgressRing({ value, size = 120, stroke = 10, className, track 
       <svg width={size} height={size} className="-rotate-90" aria-hidden>
         <defs>
           <linearGradient id="yvRing" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0%" stopColor="#5046E5" />
-            <stop offset="100%" stopColor="#FF64F5" />
+            <stop offset="0%" stopColor="#141414" />
+            <stop offset="100%" stopColor="#5E5E5E" />
           </linearGradient>
         </defs>
         <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={track} strokeWidth={stroke} />

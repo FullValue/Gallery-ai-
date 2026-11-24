@@ -17,19 +17,16 @@
       "color": "violet",
       "lessons": [
         {
-          "title": "Se connecter à sa boutique",
-          "video": null,
-          "duration": null
-        },
-        {
-          "title": "Le parcours d'accueil",
-          "video": null,
-          "duration": null
+          "title": "Se connecter et démarrer",
+          "video": "/videos/m1-1.mp4",
+          "duration": 45,
+          "_id": "m1-1"
         },
         {
           "title": "Se repérer dans l'app",
-          "video": null,
-          "duration": null
+          "video": "/videos/m1-2.mp4",
+          "duration": 30,
+          "_id": "m1-2"
         }
       ]
     },
@@ -43,8 +40,9 @@
       "lessons": [
         {
           "title": "Les passages en direct",
-          "video": null,
-          "duration": null
+          "video": "/videos/m2-1.mp4",
+          "duration": 35,
+          "_id": "m2-1"
         }
       ]
     },
@@ -58,18 +56,21 @@
       "lessons": [
         {
           "title": "La plaquette NFC et le lien",
-          "video": null,
-          "duration": null
+          "video": "/videos/m3-1.mp4",
+          "duration": 30,
+          "_id": "m3-1"
         },
         {
           "title": "Ce que voit le client",
-          "video": null,
-          "duration": null
+          "video": "/videos/m3-2.mp4",
+          "duration": 52,
+          "_id": "m3-2"
         },
         {
           "title": "Personnaliser ses questions",
-          "video": null,
-          "duration": null
+          "video": "/videos/m3-3.mp4",
+          "duration": 34,
+          "_id": "m3-3"
         }
       ]
     },
@@ -83,18 +84,21 @@
       "lessons": [
         {
           "title": "Lancer « Trouver son parfum »",
-          "video": null,
-          "duration": null
+          "video": "/videos/m4-1.mp4",
+          "duration": 24,
+          "_id": "m4-1"
         },
         {
           "title": "Lire le profil et les propositions",
-          "video": null,
-          "duration": null
+          "video": "/videos/m4-2.mp4",
+          "duration": 35,
+          "_id": "m4-2"
         },
         {
           "title": "Clore : vendu ou pas vendu",
-          "video": null,
-          "duration": null
+          "video": "/videos/m4-3.mp4",
+          "duration": 27,
+          "_id": "m4-3"
         }
       ]
     },
@@ -108,13 +112,15 @@
       "lessons": [
         {
           "title": "Retrouver un client",
-          "video": null,
-          "duration": null
+          "video": "/videos/m5-1.mp4",
+          "duration": 26,
+          "_id": "m5-1"
         },
         {
           "title": "La fiche client",
-          "video": null,
-          "duration": null
+          "video": "/videos/m5-2.mp4",
+          "duration": 31,
+          "_id": "m5-2"
         }
       ]
     },
@@ -128,8 +134,9 @@
       "lessons": [
         {
           "title": "Les clients à recontacter",
-          "video": null,
-          "duration": null
+          "video": "/videos/m6-1.mp4",
+          "duration": 38,
+          "_id": "m6-1"
         }
       ]
     },
@@ -143,13 +150,15 @@
       "lessons": [
         {
           "title": "Écrire un mail ciblé",
-          "video": null,
-          "duration": null
+          "video": "/videos/m7-1.mp4",
+          "duration": 42,
+          "_id": "m7-1"
         },
         {
           "title": "Suivre ses envois",
-          "video": null,
-          "duration": null
+          "video": "/videos/m7-2.mp4",
+          "duration": 20,
+          "_id": "m7-2"
         }
       ]
     },
@@ -163,18 +172,21 @@
       "lessons": [
         {
           "title": "Mes parfums",
-          "video": null,
-          "duration": null
+          "video": "/videos/m8-1.mp4",
+          "duration": 30,
+          "_id": "m8-1"
         },
         {
           "title": "Mes ventes",
-          "video": null,
-          "duration": null
+          "video": "/videos/m8-2.mp4",
+          "duration": 31,
+          "_id": "m8-2"
         },
         {
           "title": "Les réglages",
-          "video": null,
-          "duration": null
+          "video": "/videos/m8-3.mp4",
+          "duration": 23,
+          "_id": "m8-3"
         }
       ]
     },
@@ -188,8 +200,9 @@
       "lessons": [
         {
           "title": "Interroger Gallery AI",
-          "video": null,
-          "duration": null
+          "video": "/videos/m9-1.mp4",
+          "duration": 41,
+          "_id": "m9-1"
         }
       ]
     }

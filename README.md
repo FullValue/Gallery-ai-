@@ -1,13 +1,13 @@
 # Gallery Formation — formation.gallery-ai.fr
 
-Plateforme de formation des partenaires B2B de Gallery :
+Plateforme de formation des boutiques équipées de gallery. (parfumeries de niche) :
 modules vidéo, progression individuelle, ressources PDF, support par e-mail et back-office complet.
 
 ## Démarrer en local (mode démo)
 
 ```bash
 npm install
-npm run dev          # http://localhost:3100
+npm run dev          # http://localhost:3200
 ```
 
 Sans variables Supabase, l'application démarre en **mode démo** : base locale dans `.data.nosync/demo-db.json`,
@@ -23,7 +23,7 @@ Supprimer `.data.nosync/` pour repartir du catalogue initial.
 
 ## Mise en production (Supabase)
 
-1. Créer un projet Supabase **dédié** à formation.gallery-ai.fr (ne pas réutiliser la base de l'app élèves ni de Gallery OS).
+1. Créer un projet Supabase **dédié** à formation.gallery-ai.fr (ne pas réutiliser la base de l’app gallery.).
 2. SQL Editor : exécuter dans l'ordre `supabase/migrations/0001_schema.sql`, `0002_rls.sql`, `0003_storage.sql`, puis `supabase/seed.sql`
    (catalogue de départ + vidéos).
 3. Authentication → Providers : désactiver les inscriptions publiques (« Allow new users to sign up » : off). Les comptes sont créés par invitation.
@@ -87,3 +87,11 @@ Le Bureau est synchronisé par iCloud Drive et le disque est presque plein : mac
 cloud, ce qui bloque Node. Pour l'éviter, `node_modules`, `.next` et `public` sont des liens vers des dossiers
 `*.nosync` qu'iCloud ignore, et la base démo est écrite dans `.data.nosync/`. Si le projet est déplacé hors du Bureau (recommandé, par ex. `~/Projects`), on peut
 revenir à une structure classique : `rm public && mv public.nosync public` (idem pour les autres).
+
+## Vidéos de formation
+
+Les 18 vidéos (9 modules) sont dans `public/videos/m<module>-<n>.mp4`, référencées par `lib/seed/catalog.json`.
+Elles sont produites hors du dépôt par le moteur `~/Gallery Formation Videos/engine` :
+captures réelles de l'app (boutique Secret Garden, fiche de test « Camille Démo »), montage Canvas + FFmpeg,
+voix ElevenLabs « Camille FR ». Pour refaire une vidéo : modifier `engine/src/lessons.js`, puis
+`node voice.mjs <id>` et `node render.mjs <id>`, et recopier le `.mp4` ici avec `node scripts/import-videos.mjs`.

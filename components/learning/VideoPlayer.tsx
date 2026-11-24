@@ -111,7 +111,7 @@ export function VideoPlayer({ provider, refId, startAt = 0, title, onTime, onPau
 
   if (!refId || provider === "none") {
     return (
-      <div className="relative grid aspect-video w-full place-items-center overflow-hidden rounded-[28px] bg-gradient-to-br from-violet-900 via-violet-800 to-[#2a1c6b] text-center text-white">
+      <div className="relative grid aspect-video w-full place-items-center overflow-hidden rounded-[28px] bg-gradient-to-br from-violet-900 via-violet-800 to-ink-soft text-center text-white">
         <div className="absolute -left-10 -top-10 size-64 rounded-full bg-violet-500/40 blur-3xl" aria-hidden />
         <div className="absolute -bottom-16 -right-10 size-64 rounded-full bg-rose-500/30 blur-3xl" aria-hidden />
         <div className="relative px-6">
